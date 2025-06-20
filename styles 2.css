@@ -80,6 +80,13 @@
       document.getElementById('page3').style.display = 'none';
       document.getElementById(id).style.display = 'flex';
     }
+body {
+  background-image: url('path/to/floral-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
   </script>
 </body>
 </html>
