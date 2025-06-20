@@ -1,9 +1,13 @@
 
 body {
   margin: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
   scroll-behavior: smooth;
   color: #3a3a3a;
+  background-image: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=1280&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .page {
   min-height: 100vh;
