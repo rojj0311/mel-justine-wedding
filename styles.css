@@ -1,0 +1,58 @@
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  scroll-behavior: smooth;
+  color: #3a3a3a;
+}
+.page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.welcome {
+  background: #f9fdf8;
+}
+.details {
+  background: #f1f6ef;
+}
+.theme {
+  background: #edf3e6;
+}
+h1 {
+  font-size: 48px;
+  color: #587246;
+}
+h2 {
+  font-size: 36px;
+  color: #6b7b4e;
+  margin-bottom: 20px;
+}
+h3 {
+  color: #5a6a3f;
+  margin-top: 30px;
+}
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.date-time, .venue {
+  font-weight: bold;
+  color: #6c8347;
+}
+.colors, .color-palette {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+.swatch, .color-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+}
