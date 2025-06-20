@@ -1,84 +1,85 @@
 
-body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  scroll-behavior: smooth;
-  color: #3a3a3a;
-}
-.page {
-  min-height: 100vh;
-  padding: 60px 20px;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-.page:first-of-type {
-  display: flex;
-}
-.overlay {
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 800px;
-}
-.welcome {
-  background-image: url('https://i.imgur.com/hBZrP6z.jpg');
-}
-.details {
-  background-image: url('https://i.imgur.com/WZkXUuO.jpg');
-}
-.theme {
-  background-image: url('https://i.imgur.com/kQe9rCg.jpg');
-}
-h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 64px;
-  color: #587246;
-}
-h2 {
-  font-size: 36px;
-  color: #6b7b4e;
-  margin-bottom: 20px;
-}
-h3 {
-  color: #5a6a3f;
-  margin-top: 30px;
-}
-p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-.date-time, .venue {
-  font-weight: bold;
-  color: #6c8347;
-}
-.colors, .color-palette {
-  display: flex;
-  justify-content: center;
-  margin: 15px 0;
-}
-.swatch, .color-box {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 0 5px;
-  border: 1px solid #ccc;
-}
-button {
-  margin-top: 30px;
-  background-color: #a3b18a;
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #6b705c;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Invitation - Mel Serg & Justine</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Page 1: Welcome -->
+  <section class="page welcome" id="page1">
+    <div class="overlay">
+      <div class="content">
+        <h4>TOGETHER WITH THEIR FAMILIES</h4>
+        <h1>Mel Serg<br>&<br>Justine</h1>
+        <p>Invite you to their wedding</p>
+        <p class="date-time">Saturday | 12 | 03:30 PM<br>July 2025</p>
+        <p class="venue">Basak Fatima Parish<br>Basak, Mandaue City 6014</p>
+        <button onclick="showPage('page2')">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page 2: Details -->
+  <section class="page details" id="page2" style="display:none;">
+    <div class="overlay">
+      <div class="content">
+        <h2>The Details</h2>
+        <h3>Attire</h3>
+        <p>We would love to see you in your formal attire.<br>
+        We encourage you to dress according to our wedding color.</p>
+        <div class="colors">
+          <span class="swatch" style="background:#a8c49c;"></span>
+          <span class="swatch" style="background:#c6d6b8;"></span>
+          <span class="swatch" style="background:#dce7c3;"></span>
+          <span class="swatch" style="background:#e9f0ce;"></span>
+          <span class="swatch" style="background:#f3f5dc;"></span>
+        </div>
+
+        <h3>Gifts</h3>
+        <p>With all that we have, we've been truly blessed.<br>
+        Your presence and your prayers are all that we request.<br>
+        But if you desire to give nonetheless, a monetary gift is one we request.</p>
+
+        <h3>RSVP</h3>
+        <p>We have reserved 1 seat for you.<br>
+        The favor of your reply is requested on or before May.<br>
+        Kindly message thru SMS – <b>+639354951368</b><br>
+        or thru FB/Messenger.</p>
+
+        <button onclick="showPage('page3')">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page 3: Color Theme -->
+  <section class="page theme" id="page3" style="display:none;">
+    <div class="overlay">
+      <div class="content">
+        <h2>Wedding Color Theme</h2>
+        <div class="color-palette">
+          <div class="color-box" style="background-color: #a8c49c;"></div>
+          <div class="color-box" style="background-color: #c6d6b8;"></div>
+          <div class="color-box" style="background-color: #dce7c3;"></div>
+          <div class="color-box" style="background-color: #e9f0ce;"></div>
+          <div class="color-box" style="background-color: #f3f5dc;"></div>
+        </div>
+        <p>Thank you for being part of our special day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Page Switching Script -->
+  <script>
+    function showPage(id) {
+      document.getElementById('page1').style.display = 'none';
+      document.getElementById('page2').style.display = 'none';
+      document.getElementById('page3').style.display = 'none';
+      document.getElementById(id).style.display = 'flex';
+    }
+  </script>
+</body>
+</html>
