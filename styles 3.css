@@ -1,0 +1,84 @@
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  scroll-behavior: smooth;
+  color: #3a3a3a;
+}
+.page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.page:first-of-type {
+  display: flex;
+}
+.overlay {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+}
+.welcome {
+  background-image: url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=1280&q=80');
+}
+.details {
+  background-image: url('https://images.unsplash.com/photo-1615478349397-b3b3d7f276db?auto=format&fit=crop&w=1280&q=80');
+}
+.theme {
+  background-image: url('https://images.unsplash.com/photo-1548095115-45697e70b9f4?auto=format&fit=crop&w=1280&q=80');
+}
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 64px;
+  color: #587246;
+}
+h2 {
+  font-size: 36px;
+  color: #6b7b4e;
+  margin-bottom: 20px;
+}
+h3 {
+  color: #5a6a3f;
+  margin-top: 30px;
+}
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.date-time, .venue {
+  font-weight: bold;
+  color: #6c8347;
+}
+.colors, .color-palette {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+.swatch, .color-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+}
+button {
+  margin-top: 30px;
+  background-color: #a3b18a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #6b705c;
+}
